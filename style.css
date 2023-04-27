@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.whole-data{
+    margin: 0 auto;
+    width: 80%;
+}
+.inputs{
+    text-align: center;
+}
+svg{
+    width: 35px;
+    fill: white;
+    padding: 20px;
+    background-color: #38bdf8;
+    border-radius: 50%;
+}
+.header-left{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 1.25rem;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+ul {
+    list-style-type: none;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+ul{
+    display: flex;
+    gap: 20px;
+}
+ul li{
+    font-size: 1rem;
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    font-weight: 600;
+    color: #4b556c;
+    cursor: pointer;
+}
+.inputs svg{
+    padding: 0px;
+    border-radius: 0px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.outer-layer-inputs{
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+}
+.city-input{
+    width: -webkit-fill-available;
+    height: 20px;
+    border: none;
+    font-size: 15px;
+    outline: none;
+}
+.inputs{
+    margin-top: 40px;
+}
+.outer-layer-inputs{
+    border: 2px solid gray;
+    padding: 10px;
+    align-items: center;
+    border-radius: 10px;
+}
+.parameters{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.weather-section{
+    text-align: center;
+    background-color: #bae6fd;
+    margin: 0 auto;
+    width: 370px;
+    margin-top: 50px;
+}
+.city-name{
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    font-weight: 700;
+}
+.discription{
+    margin-bottom: 40px;
+}
+.weather-section img{
+    width: 100px;
+    margin-bottom: 40px;
+}
+.discription{
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    font-weight: 400;
+}
+.temp-text{
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.exact-temp{
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    font-weight: 100;
+    color: gray;
+}
+.weather-section{
+    padding: 20px 0;
+    border-radius: 20px;
+}
+
+@media screen and (max-width : 569px){
+    .header{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .weather-section{
+        width: 280px;
+    }
+    .temp-text,.exact-temp{
+        font-size: 13px;
+    } 
+    .parameters{
+        gap: 10px;
+    }
+}
