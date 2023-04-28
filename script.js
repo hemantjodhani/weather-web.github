@@ -2,10 +2,10 @@ $(document).ready(function(){
 
     var  geolocation = ""
 
-    
+
     function ip_city_generator(){
 
-        const api = "http://ip-api.com/json/?fields=61439"
+        const api = "https://ip-api.com/json/?fields=61439"
          $.get(api)
             .done(function(ip_adress){
                 // console.log(ip_adress.city)
