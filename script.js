@@ -6,7 +6,7 @@ $(document).ready(function(){
 
         var latitude = crd.latitude;
         var longitude = crd.longitude;
-        var city_fetcher_api = "http://api.openweathermap.org/geo/1.0/reverse?lat="+latitude+"&lon="+longitude+"&appid="+API_KEY;
+        var city_fetcher_api = "https://api.openweathermap.org/geo/1.0/reverse?lat="+latitude+"&lon="+longitude+"&appid="+API_KEY;
         $.get(city_fetcher_api)
         .done(function(lat_long_city){
             var city = lat_long_city[0].name;
