@@ -31,7 +31,7 @@ $(document).ready(function(){
             $(".weather-icon").attr("src", current_icon);
         })
         .fail(function(){
-            alert("Sorry, couldn't load your current location");
+            alert("We are sorry, we couldn't determine your location. You can search for your city by typing its name in the search bar provided.");
             $(".weather-section").hide()
         })
     }
